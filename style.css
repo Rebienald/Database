@@ -1,0 +1,92 @@
+.container {
+    height: 40vh;
+    width: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the container horizontally */
+    position: absolute;
+    top: 30%; /* Centers the container vertically */
+    left: 50%; /* Centers the container horizontally */
+    transform: translate(-50%, -50%); /* Offsets the element by half of its width and height */
+ }
+
+.rotate {
+   
+    animation: spin 5s linear infinite;
+  height: 50vh;
+  width: 50vh;
+    max-width: 100%; /* Makes sure the image doesn't overflow */
+    max-height: 100%; /* Ensures the image scales within the container */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d3a9f7, #9b59b6, #8e44ad, #5e3370);
+
+}
+h1{
+    background-color: rgb(183, 155, 209);
+    color: white;
+    font-size: 3vh;
+    margin-top: 0!important;
+
+    text-align: center;
+    position: sticky;
+      top: 0;
+      z-index: 10;
+     
+}
+.button-container {
+     display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    height: 100vh; /* Full height of the viewport */
+    top: 150%; /* Centers the container vertically */
+
+}
+
+button {
+    background: rgba(255, 255, 255, 0.2); /* Light transparency */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    color: rgb(255, 255, 255); /* Text color */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 15vh;
+    height: 5vh;
+    text-align: center;
+    font-size: 16px; /* Optional: Adjust button text size */
+}
+#letter{
+    background: rgba(255, 255, 255, 0.2); /* Light transparency */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    color: rgb(255, 255, 255); /* Text color */
+    border-radius: 20px;
+    text-align: justify;
+    padding:10px;
+    font-size: 3vh;
+    position: relative;
+  top: 10%; /* Adjust the value to your liking */ 
+}
+strong{
+    color:purple;
+}
+#ewan{
+    margin-top: 10%;
+  
+}
+marquee{
+   
+    color: rgb(255, 255, 255); /* Text color */
+
+}
